@@ -15,7 +15,7 @@ module.exports = app => {
   )
 
   //  Google authentication kickback
-  app.get('/auth/google/callback', passport.authenticate('google'));
+  app.get('/auth/google/callback', passport.authenticate('google', { scope: 'https://www.googleapis.com/auth/plus.login' }));
 
   // Google logout
   app.get('/api/logout', (req, res) => {
