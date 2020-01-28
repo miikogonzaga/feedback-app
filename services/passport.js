@@ -19,8 +19,7 @@ passport.use(
   new GoogleStrategy({
     clientID: keys.googleClientID,
     clientSecret: keys.googleClientSecret,
-    callbackURL: '/auth/google/callback',
-    proxy: true
+    callbackURL: 'https://dry-forest-05852.herokuapp.com/auth/google/callback'
   },
   (accessToken, refreshToken, profile, done) => {
     // Search query
