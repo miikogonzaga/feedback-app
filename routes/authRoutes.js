@@ -1,8 +1,9 @@
 const passport = require('passport')
 
-// Return an app function
+// Return app function
 module.exports = app => {
-  app.get('/', (req, res) => {
+
+  app.get('/', (req, res) => {;
     res.send('Hello World')
   })
 
@@ -14,23 +15,22 @@ module.exports = app => {
     })
   )
 
-  //  Google authentication kickback
+  //  Google auth kickback
   app.get(
     '/auth/google/callback',
-    passport.authenticate(
-      'google',
-      { scope: 'https://www.googleapis.com/auth/plus.login' }
-    )
-  );
+    passport.authenticate('google'),
+    (req, res) => res.redirect('/surveys')
+  )
 
   // Google logout
   app.get('/api/logout', (req, res) => {
-    req.logout();
-    res.send(req.user)
+    req.logout()
+    res.redirect('/')
   })
 
   // Login check
   app.get('/api/current_user', (req, res) => {
     res.send(req.user)
   })
+
 }

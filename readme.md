@@ -1,8 +1,6 @@
 # Feedback App
 
-A platform for users to send surveys.
-
-Under Construction 🚧
+A platform for users to send surveys. Under Construction 🚧
 
 ## Getting Started
 
@@ -43,7 +41,7 @@ npm run dev
 
 ## Authors
 
-* **GGonzaga**
+* ggonzaga
 
 ## License
 
@@ -51,4 +49,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* [https://github.com/StephenGrider] (Stephen Grider) Rallycoding
+* [Stephen Grider] (https://github.com/StephenGrider) Rallycoding
