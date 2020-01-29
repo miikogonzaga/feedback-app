@@ -3,10 +3,6 @@ const passport = require('passport')
 // Return app function
 module.exports = app => {
 
-  app.get('/', (req, res) => {;
-    res.send('Hello World')
-  })
-
   // Google login
   app.get(
     '/auth/google',
