@@ -5,6 +5,7 @@ const passport = require('passport');
 const bodyParser = require('body-parser')
 const keys = require('./config/keys');
 require('./models/User');
+require('./models/Survey');
 require('./services/passport');
 
 // To the DB
@@ -27,6 +28,7 @@ app.use(passport.session());
 // Routes functions 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
 
 // Production routing
 if (process.env.NODE_ENV === 'production') {
