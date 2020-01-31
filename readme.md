@@ -49,4 +49,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* [Stephen Grider] (https://github.com/StephenGrider) Rallycoding
+* [Node with React](https://www.udemy.com/course/node-with-react-fullstack-web-development/)
