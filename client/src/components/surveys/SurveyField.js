@@ -1,12 +1,14 @@
 import React from 'react'
 import { getFormMeta } from 'redux-form'
 
-export default ({ input, label, meta: { error, touched } }) => {
+export default ({ input, label, meta: { touched, error } }) => {
     return (
         <div>
             <label>{label}</label>
             <input {...input} />
-            {touched && error}
+            <div style={{ marginBottom: 20 }}>
+                {touched && error}
+            </div>
         </div>
     )
 }
