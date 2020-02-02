@@ -11,10 +11,10 @@ module.exports = app => {
         amount: 100,
         currency: 'usd',
         source: req.body.id,
-        description: '$1 per credit'
+        description: '$1 per 5 credits'
     });
 
-    req.user.credits += 1;
+    req.user.credits += 5;
     const user = await req.user.save();
 
     res.send(user)
