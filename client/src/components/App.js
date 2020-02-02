@@ -1,13 +1,12 @@
-import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import { connect } from 'react-redux';
-import * as actions from '../actions';
+import React from 'react'
+import { BrowserRouter, Route } from 'react-router-dom'
+import { connect } from 'react-redux'
+import * as actions from '../actions'
 
-import Header from './Header';
+import Header from './Header'
 import Landing from './Landing'
-
-const Dashboard = () => <h2>Surveys Dashboard</h2>
-const SurveyNew = () => <h2>Survey New</h2>
+import Dashboard from './Dashboard'
+import SurveyNew from './surveys/SurveyNew'
  
 class App extends React.Component {
   componentDidMount() {
@@ -30,4 +29,4 @@ class App extends React.Component {
   }
 }
 
-export default connect(null, actions)(App);
+export default connect(null, actions)(App)
