@@ -1,6 +1,6 @@
-# Feedback App
+# Feedback Survey App
 
-A platform for users to send surveys. Under Construction 🚧
+A platform for users to send surveys. This is an educational Full Stack App from Stephen Grider on [Udemy](https://www.udemy.com/course/node-with-react-fullstack-web-development/).
 
 ## Getting Started
 
@@ -30,23 +30,19 @@ npm run dev
 ## Built With
 
 * ReactJS
-* Redux
+* Redux, Redux Form
 * ExpressJS
 * NodeJS
 * MongoDB
 
-## Current Features
+## Features
 
 * Google OAuth Authentication
+* Stripe API Integration
+* Sendgrid Integration and Webhooks
+* Survey Feedback 
 
-## Authors
-
-* ggonzaga
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* [Node with React](https://www.udemy.com/course/node-with-react-fullstack-web-development/)
