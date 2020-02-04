@@ -14,7 +14,7 @@ class Header extends React.Component {
             default: 
                 return [ 
                     <li key="1"><Payments /></li>,
-                    <li style={{ margin: '0 10px' }} key="2">Credit: {this.props.auth.credits}</li>,
+                    <li style={{ margin: '0 30px' }} key="2">Credit: {this.props.auth.credits}</li>,
                     <li key="3"><a href="/api/logout">Logout</a></li> 
                 ]
         }
@@ -23,16 +23,12 @@ class Header extends React.Component {
     render() {
         return (
             <nav>
-                <div className="nav-wrapper">
-                    <Link 
-                        to={this.props.auth ? '/surveys' : '/' }
-                        className="brand-logo">
-                        Feedback
-                    </Link>
-                    <ul id="nav-mobile" className="right hide-on-med-and-down">
-                        {this.renderContent()}
-                    </ul>
-                </div>
+                <Link to={this.props.auth ? '/surveys' : '/' }>
+                    <h2><img style={{ width: 24 }} src="/images/logo.png" /> Feedback Survey</h2>
+                </Link>
+                <ul>
+                    {this.renderContent()}
+                </ul>
             </nav>
         )
     }
