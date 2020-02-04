@@ -17,6 +17,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
   }
 
+  h2 {
+      font-size: 32px;
+  }
+
   img {
       width: 100%;
   }
@@ -25,13 +29,14 @@ body {
       color: $blue;
   }
 
-  .button {
+  button, .button {
     padding: 15px 30px;
     border: 1px solid #333;
     border-radius: 3px;
     color: #333;
     text-decoration: none;
     transition: all .3s ease;
+    font-size: 18px;
   }
 
   .button:hover {
@@ -43,77 +48,134 @@ body {
       color: $blue;
   }
 
-  nav {
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgb(253,253,253);
 
-      h2 {
-          color: #aaa;
-      }
+// Navigation 
+//
+nav {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(253,253,253);
 
-      h2 {
-          color: #555;
-      }
+    h2 {
+        color: #aaa;
+    }
 
-      a {
-          color: #333;
-          text-decoration: none;
-      }
+    h2 {
+        color: #555;
+    }
 
-      ul {
-          display: flex;
-          list-style-type: none;
-      }
-  }
+    a {
+        color: #333;
+        text-decoration: none;
+    }
 
-  .main {
-      padding: 30px;
-  }
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+}
 
-  .landing {
-      display: flex;
-      align-items: center;
 
-      div {
-          padding: 60px;
-      }
-  }
+// Homepage 
+//
+.main {
+    padding: 30px;
+}
 
-  .surveyList {
-      margin: 30px 0;
-      padding: 0 30px 30px;
-      border: 1px solid rgb(240,240,240);
-      border-radius: 6px;
-      box-shadow: $sideShadow;
+.landing {
+    display: flex;
+    align-items: center;
 
-      div.surveyListBottom {
-          margin-top: 10px;
-          display: flex;
-          justify-content: space-between;
-          font-weight: bold;
-          color: #555;
-      }
-  }
+    div {
+        padding: 60px;
+    }
+}
 
-  @media (max-width: 700px) {
-      nav {
-          flex-direction: column;
 
-          ul {
-              padding-left: 0;
-          }
-      }
+// Surveys 
+//
+.surveyForm {
+    margin: 45px auto;
+    padding: 60px;
+    border: 1px solid #dedede;
+    width: 60%;
+    border-radius: 3px;
+    box-shadow: $sideShadow;
 
-      .landing {
-          flex-direction: column;
+    div {
+        margin-bottom: 30px;
+    }
 
-          div {
-              margin: 45px 0;
-              padding: 15px;
-          }
-      }
-  }
+    label {
+        text-align: left;
+        display: block;
+        font-size: 20px;
+    }
+
+    input {
+        margin-top: 10px;
+        padding: 15px;
+        width: 100%;
+        border: 1px solid #dedede;
+        border-radius: 3px;
+        font-size: 18px;
+    }
+}
+
+.error {
+    margin-top: 5px;
+    text-align: left;
+    color: red;
+    font-size: 14px;
+}
+
+.surveyList {
+    margin: 30px 0;
+    padding: 0 30px 30px;
+    border: 1px solid rgb(240,240,240);
+    border-radius: 6px;
+    box-shadow: $sideShadow;
+
+    div.surveyListBottom {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        color: #555;
+    }
+}
+
+
+// Below 700px 📱
+//
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+
+        ul {
+            padding-left: 0;
+        }
+    }
+
+    button, .button {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+
+    .landing {
+        flex-direction: column;
+
+        div {
+            margin: 45px 0;
+            padding: 15px;
+        }
+    }
+
+    .surveyForm {
+        width: 100%;
+        padding: 15px;
+    }
+}
   

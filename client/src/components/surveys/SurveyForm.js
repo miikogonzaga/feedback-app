@@ -23,13 +23,15 @@ class SurveyForm extends Component {
 
     render() {
         return (
-            <div>
-                <form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)} >
-                    {this.renderFields()}
-                    <Link to="/surveys">Cancel</Link>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+            <form className="surveyForm" onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)} >
+                {this.renderFields()}
+                <br></br>
+                <br></br>
+                <div style={{ textAlign: 'center' }}>
+                    <Link style={{ marginRight: 15 }} className="button" to="/surveys">Cancel</Link>
+                    <button className="button submit" type="submit">Review →</button>
+                </div>
+            </form>
         )
     }
 }

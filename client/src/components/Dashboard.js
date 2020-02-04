@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import SurveyList from './surveys/SurveyList'
 
 const Dashboard = props => {
-    console.log(SurveyList)
     return (
         <div>
             <h2>Surveys Dashboard</h2>

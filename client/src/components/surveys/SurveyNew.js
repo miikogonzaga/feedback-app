@@ -18,6 +18,7 @@ class SurveyNew extends Component {
     render() {
         return (
             <div>
+                <h2 style={{ textAlign: 'center' }}>Create a New Survey</h2>
                 {this.renderContent()}
             </div>
         )
