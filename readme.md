@@ -1,15 +1,29 @@
-# Feedback Survey App
+# Feedback Survey App 🗳
 
-A platform for users to send surveys. This is an educational Full Stack App from Stephen Grider on [Udemy](https://www.udemy.com/course/node-with-react-fullstack-web-development/).
+A platform for users to send surveys and gather feedback. Tutorial from Stephen Grider on [Udemy](https://www.udemy.com/course/node-with-react-fullstack-web-development/).
 
 ![alt text](https://pxlbypxl.com/wp-content/uploads/2020/02/feedback-survey.png)
 
+## Features
 
-## Getting Started
+* Google OAuth Authentication
+* Stripe API Integration
+* Sendgrid Integration and Webhooks
+* Survey Feedback
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## Built With
 
-### Installing
+* ReactJS
+* Redux, Redux Form
+* ExpressJS
+* NodeJS
+* MongoDB
+
+## Deployment
+
+* Heroku - [https://feedbacksurvey.herokuapp.com](https://feedbacksurvey.herokuapp.com)
+
+## Installing
 
 Clone the project
 ```
@@ -32,32 +46,14 @@ module.exports = {
   stripeSecretKey: '',
   sendgridKey: ''
 };
+
+// Create accounts on google, mongo, stripe, and sendgrid. 
 ```
 
 Run app in browser
 ```
 npm run dev
 ```
-
-## Deployment
-
-* Heroku
-
-## Built With
-
-* ReactJS
-* Redux, Redux Form
-* ExpressJS
-* NodeJS
-* MongoDB
-
-## Features
-
-* Google OAuth Authentication
-* Stripe API Integration
-* Sendgrid Integration and Webhooks
-* Survey Feedback 
-
 
 ## License
 
