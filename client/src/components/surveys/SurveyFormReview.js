@@ -6,25 +6,25 @@ import * as actions from '../../actions'
 
 // Review before submission
 const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
-    console.log(formValues)
-        const reviewFields = formFields.map(({ name, label }) => {
-            return (
-                <div key={name}>
-                    <label>{label}</label>
-                    <div>{formValues[name]}</div>
-                </div>
-            )
-        })
+    const reviewFields = formFields.map(({ name, label }) => {
+        return (
+            <div key={name}>
+                <label>{label}</label>
+                <div>{formValues[name]}</div>
+            </div>
+        )
+    })
 
     return (
-        <div>
-            <h3>Review</h3>
+        <div className="surveyReview">
+            <h3>Review and Send</h3>
             {reviewFields}
-            <button className="button" onClick={onCancel}>
+            <br></br>
+            <button style={{ marginRight: 15 }} className="button" onClick={onCancel}>
                 Go Back
             </button>
             <button className="button" onClick={() => submitSurvey(formValues, history)}>
-                Send Survey
+                Send Survey →
             </button>
         </div>
     )
