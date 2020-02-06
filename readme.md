@@ -2,7 +2,7 @@
 
 A platform for users to send surveys and gather feedback. Tutorial from Stephen Grider on [Udemy](https://www.udemy.com/course/node-with-react-fullstack-web-development/).
 
-![alt text](https://pxlbypxl.com/wp-content/uploads/2020/02/feedback-survey.png)
+![alt text](https://pxlbypxl.com/wp-content/uploads/2020/02/Feedback_Survey-GIF.gif)
 
 ## Features
 
