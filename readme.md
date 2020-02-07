@@ -1,6 +1,6 @@
 # Feedback Survey App 🗳
 
-A platform for users to send surveys and gather feedback. Tutorial from Stephen Grider on [Udemy](https://www.udemy.com/course/node-with-react-fullstack-web-development/).
+A platform for users to send surveys and gather feedback.
 
 ![alt text](https://pxlbypxl.com/wp-content/uploads/2020/02/Feedback_Survey-GIF.gif)
 
@@ -47,7 +47,7 @@ module.exports = {
   sendgridKey: ''
 };
 
-// Create accounts on google, mongo, stripe, and sendgrid. 
+// Create accounts on google, mongo, stripe, and sendgrid.
 ```
 
 Run app in browser
@@ -58,3 +58,7 @@ npm run dev
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgements
+
+[Udemy](https://www.udemy.com/course/node-with-react-fullstack-web-development/) course.
