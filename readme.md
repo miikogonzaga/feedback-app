@@ -2,7 +2,7 @@
 
 A platform for users to send surveys and gather feedback.
 
-![alt text](https://pxlbypxl.com/wp-content/uploads/2020/02/Feedback_Survey-GIF.gif)
+![alt text](feedback.gif)
 
 ## Features
 
